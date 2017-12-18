@@ -1,0 +1,15 @@
+#N canvas 514 118 879 546 10;
+#X obj 279 20 inlet;
+#X obj 279 185 outlet;
+#X msg 280 87 list playlist01 playlist02 playlist03 playlist04 playtrans01
+playtrans02 playtrans03 playtrans04;
+#X obj 25 23 table playlist01;
+#X obj 26 48 table playlist02;
+#X obj 25 73 table playlist03;
+#X obj 25 98 table playlist04;
+#X obj 19 146 table playtrans01;
+#X obj 19 176 table playtrans02;
+#X obj 18 204 table playtrans03;
+#X obj 19 231 table playtrans04;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;

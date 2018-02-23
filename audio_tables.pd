@@ -1,15 +1,50 @@
-#N canvas 514 118 879 546 10;
+#N canvas 798 93 879 546 10;
 #X obj 279 20 inlet;
-#X obj 279 185 outlet;
-#X msg 280 87 list playlist01 playlist02 playlist03 playlist04 playtrans01
-playtrans02 playtrans03 playtrans04;
+#X obj 279 232 outlet;
 #X obj 25 23 table playlist01;
 #X obj 26 48 table playlist02;
-#X obj 25 73 table playlist03;
-#X obj 25 98 table playlist04;
 #X obj 19 146 table playtrans01;
 #X obj 19 176 table playtrans02;
-#X obj 18 204 table playtrans03;
 #X obj 19 231 table playtrans04;
-#X connect 0 0 2 0;
-#X connect 2 0 1 0;
+#X obj 24 286 table kobe01;
+#X obj 24 316 table kobe02;
+#X obj 27 469 table game01;
+#X obj 27 495 table game02;
+#X obj 215 347 table pedestal01;
+#X obj 215 376 table pedestal02;
+#X obj 25 73 table playlist11;
+#X obj 18 204 table playtrans09;
+#X obj 18 256 table playtrans10;
+#X obj 24 345 table kobe05;
+#X obj 24 371 table kobe06;
+#X obj 23 393 table kobe07;
+#X obj 23 419 table kobe12;
+#X obj 109 469 table game03;
+#X obj 109 495 table game04;
+#X obj 190 469 table game05;
+#X obj 190 495 table game06;
+#X obj 273 479 table game10;
+#X obj 121 288 table run06;
+#X obj 121 317 table run08;
+#X obj 121 343 table run13;
+#X obj 122 368 table run10;
+#X obj 122 394 table run11;
+#X obj 632 360 table touch14;
+#X obj 452 450 table wipe01;
+#X obj 452 474 table wipe02;
+#X obj 631 275 table soloholo15;
+#X obj 452 496 table wipe03;
+#X obj 452 520 table wipe04;
+#X obj 534 450 table wipe07;
+#X obj 534 474 table wipe09;
+#X obj 534 496 table wipe10;
+#X obj 335 289 table unmatched01;
+#X obj 335 319 table unmatched02;
+#X msg 279 87 list playlist01 playlist02 playlist11 playtrans01 playtrans02
+playtrans09 playtrans10 playtrans04 playtrans01 kobe01 kobe02 kobe05
+kobe06 kobe07 kobe12 game01 game02 game03 game04 game05 game06 game10
+run06 run08 run10 run11 run13 pedestal01 pedestal02 unmatched01 unmatched02
+touch14 soloholo15 wipe01 wipe02 wipe03 wipe04 wipe07 wipe09 wipe10
+;
+#X connect 0 0 41 0;
+#X connect 41 0 1 0;
